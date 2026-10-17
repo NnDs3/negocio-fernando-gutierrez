@@ -14,3 +14,4 @@ Práctica N°1 - Programación Web III (UMSA)
 - `docs/`: Documentación
 - `pokeapi/`: Recursos de la API
 - `frontend/`: Código de la interfaz web
+Línea del conflicto: Esta es la versión de la Rama A.
