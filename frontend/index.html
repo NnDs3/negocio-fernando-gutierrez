@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador Pokémon</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; padding: 2rem; background: #f0f0f0; }
+        .card { background: white; padding: 20px; border-radius: 10px; display: inline-block; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin-top: 20px;}
+        img { width: 150px; height: 150px; }
+        input, button { padding: 10px; font-size: 16px; margin: 5px; }
+        .error { color: red; font-weight: bold; }
+        #mensaje { font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>Buscador de Pokémon</h1>
+    <input type="text" id="pokemonInput" placeholder="Ej: pikachu">
+    <button id="buscarBtn">Buscar</button>
+    
+    <p id="mensaje"></p>
+
+    <div id="resultado" class="card" style="display: none;">
+        <h2 id="nombre"></h2>
+        <img id="imagen" src="" alt="Pokemon">
+        <p><strong>Tipos:</strong> <span id="tipos"></span></p>
+        <p><strong>Peso:</strong> <span id="peso"></span></p>
+        <p><strong>Altura:</strong> <span id="altura"></span></p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
